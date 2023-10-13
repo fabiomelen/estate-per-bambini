@@ -8,7 +8,7 @@ export default function Home() {
         Working example how to integrate the mds-bd login services in landing &
         contest pages.
       </Card>
-      <Card title="Docs" cta={{ href: "/docs" }}>
+      <Card title="Docs" cta={{ href: "/docs", prefetch: false }}>
         Flow and services documentation.
       </Card>
     </div>

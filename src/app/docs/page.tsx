@@ -1,8 +1,19 @@
 import Script from "next/script";
+import Link from "next/link";
 
 export default function DocsPage() {
   return (
     <div>
+      <h1 className="text-xl font-bold">Demo</h1>
+      <div className="pb-4">
+        Il codice della demo è pubblico{" "}
+        <Link
+          href="https://github.com/fabiomelen/estate-per-bambini"
+          className="underline"
+        >
+          https://github.com/fabiomelen/estate-per-bambini
+        </Link>
+      </div>
       <h1 className="text-xl font-bold">Flow</h1>
       <div className="py-8">
         <pre className="mermaid">
@@ -67,6 +78,12 @@ id_token=eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImtpZCI6IlJFUTBNVVE1TjBOQ1JUSkVNems
       <h1 className="text-xl font-bold">
         How the validate and extract sub as user_uid from jwt
       </h1>
+      <Link
+        className="underline"
+        href="https://github.com/fabiomelen/estate-per-bambini/blob/main/src/app/api/play/route.tsx"
+      >
+        https://github.com/fabiomelen/estate-per-bambini/blob/main/src/app/api/play/route.tsx
+      </Link>
       <div className="py-8">
         <pre className="rounded-md bg-black p-4 font-mono text-sm text-white">
           {`
